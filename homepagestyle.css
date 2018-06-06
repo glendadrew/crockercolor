@@ -1,0 +1,236 @@
+body{
+	padding:0;
+	margin:0 auto;
+	font-family:sans-serif;
+	overflow:hidden;
+	font-family: 'Helvetica', sans-serif;
+}
+.container{
+	opacity:0;
+	transition: opacity .125s ease-in-out;
+	-moz-transition: opacity .125s ease-in-out;
+	-webkit-transition: opacity .125s ease-in-out;
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.container.visible {
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+.onehalf{
+	width:100vw;
+	height:50vh
+}
+.one-third {
+	width:33.333vw;
+	float:left;
+	height:50vh;
+	text-align: center;
+}
+.one-third:before {
+	content: '';
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	margin-right: -0.25em;
+}
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+	margin:auto;
+	padding: 10px 15px;
+		text-align:center;
+}
+.one{
+	background-color:#BF0C43;
+}
+.oneactive{
+	background-color:#BF3961;
+}
+
+.one:active{
+	background-color:#BF3961;
+}
+.newbga{
+	background-color:#BF0C43;
+}
+
+.two{
+	background-color:#F98615;
+}
+
+.twoactive{
+	background-color:#FAA34B;
+}
+.two:active{
+	background-color:#FAA34B;
+}
+.newbgb{
+	background-color:#F98615;
+}
+
+
+.three{
+	background-color:#F9BA15;
+}
+
+.threeactive{
+	background-color:#F9C84B;
+}
+
+.three:active{
+	background-color:#F9C84B;
+}
+.newbgc{
+	background-color:#F9BA15;
+}
+
+
+.four{
+	background-color:#8EAC00;
+}
+
+.fouractive{
+	background-color:#98AC34;
+}
+
+.four:active{
+	background-color:#98AC34;
+}
+
+.newbgd{
+	background-color:#8EAC00;
+}
+
+
+.five{
+	background-color:#127A97;
+}
+
+.fiveactive{
+	background-color:#2D8097;
+}
+.five:active{
+	background-color:#2D8097;
+}
+.newbge{
+	background-color:#127A97;
+}
+
+
+.six{
+	background-color:#452B72;
+}
+
+.sixactive{
+	background-color:#574477;
+}
+
+.six:active{
+	background-color:#574477;
+}
+.newbgf{
+	background-color:#452B72;
+}
+
+
+
+img{
+	padding-top:50px;
+	height:200px;
+}
+
+
+.appName{
+	position:relative;
+	color:white;
+	text-align:center;
+	font-size:35pt;
+
+	text-transform:lowercase;
+font-weight:600;		
+}
+
+.appName_active{
+	position:relative;
+	bottom:50px;
+	color:rgba(255, 255, 255, 0.5);
+	font-size:25pt;
+	text-transform:lowercase;
+	text-align:center;
+font-weight:600;	
+}
+
+.faded{
+	width:150px;
+	opacity:.3;
+	position:relative;
+	bottom:50px;
+
+}
+h3{
+	color:white;
+	font-size:18pt;
+	font-weight:500;
+	position:relative;
+	bottom:55px;
+		text-align:center;
+
+}
+.first{
+	font-size:14pt;
+	color:rgba(255, 255, 255, 0.9);
+	bottom:40px;
+	font-weight:100;
+	position:relative;
+}
+
+
+ .credittext{
+ 	color:white;
+ 	text-align:left !important;
+
+ }
+ .creditinfo{
+ 	position:relative;
+ 	text-align:center;
+ 	bottom:30px;
+ }
+
+ .creditsName{
+	padding-top:50px;
+	position:relative;
+
+	text-align:center;
+	color:white;
+	font-size:35pt;
+	font-weight:bold;
+	text-transform:lowercase;
+	padding-top:20px;
+ }
+
+
+ .creditsName_active{
+ 	bottom:178px;
+
+	position:relative;
+
+	text-align:center;
+	color:white;
+	font-size:28pt;
+	font-weight:bold;
+	text-transform:lowercase;
+
+ }
+ h4{
+ 	position:relative;
+ 	bottom:100px;
+ 	font-weight:200;
+ 	font-size:15pt;}
+
+.smaller{
+	font-size:13pt;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="UTF-8">
+        <title>Block Party!</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-2.1.0.min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+		<script type="text/javascript" src="final.js"></script>
+    </head>
+    
+    <body>
+
+<a href="../apphomepage.html">
+    <div class="backbutton">
+        <img src="../return_white.png"></img>
+    </div>
+</a>
+    
+        <section id="center">
+            <!--Header-->
+            <header>
+                <img src="blockparty10x.gif" height="100px" width="400px" alt="block party title image" />
+            </header>
+            
+            <section id="main">
+                <!--Main Play Area-->
+                <section id="playArea">
+                </section>
+                <section id="wrongArea">
+                    <span id="message">OOPS!</span>
+                </section>
+                <section id="backArea">
+                </section>
+            
+                <!--Sidebar-->
+                <section id="sidebar">
+                    <div id="score">
+                        <h2>Score</h2>
+                        <p id="scoreNum">0</p>
+                        <p id="multiplier">&nbsp;</p><br/>
+                        <p id="livesLeft">3 lives left</p><br/>
+                    </div>
+                    
+                
+                    <div id="activeColor">
+                        <h2>Active Colors</h2>
+                        <br/>
+                        <div id="active1">
+                        </div>
+                        <div id="active2">
+                        </div>
+                        <div id="active3">
+                        </div>
+                        <div id="active4">
+                        </div>
+                        <div id="active5">
+                        </div>
+                        <div id="active6">
+                        </div>
+                    </div>
+                
+                    <div id="controls">
+                        <a href=""><h3 id="reset">RESET</h3></a>
+                        <br/>
+                        <a href=""><h2 id="music">MUSIC OFF</h2></a>
+                        <a href=""><h2 id="sound">SOUND OFF</h2></a>
+                    </div>
+                    
+                </section>
+            </section>
+            <footer>
+            	<p style="font-size:.8em; font-weight:100; color:#dddddd"><br/>Created by Stephen Kui &amp; Raiyan Kan</p>
+            </footer>
+       </section>  
+
+        <!--Popup window for Game Start-->
+        <div id="startGame">
+            <img src="blockparty10x.gif" height="120px" width="480px" alt="block party title image"/>
+            <h1>Level 1: Primary Colors</h1>
+            <div id="currentColors">
+                <div id="s1">
+                </div>
+                <div id="s2">
+                </div>
+                <div id="s3">
+                </div>
+                <div id="currentClear"></div>
+            </div>
+            <h2 id="startText" style="margin-bottom:30px;">Choose the primary colors that exactly match these blocks as they fall.<br/>Don't click the other colors, even if they are almost the same!<br/>Watch out for +1 blocks for an extra life and don't click the skulls!</h2>
+            <a id="begin" href="">START GAME</a>
+        </div>
+        
+        <!--Popup window for Level up-->
+        <div id="levelUp">
+            <h2 id="levelText" style="margin-bottom:30px;"></h2>
+            <a id="keepGoing" href="">KEEP GOING</a>
+        </div>
+        
+        <!--Popup window for zone up-->
+        <div id="zoneUp">
+            <h2 id="zoneText" style="margin-bottom:30px;"></h2>
+        </div>
+        
+        <!--Popup Window for Reset-->
+        <div id="resetConfirm">
+            <h2 style="margin-bottom:30px;">Are you sure you want to reset?</h2>
+            <a class = "buttons" href="index.html">YES</a>
+            <a id="cancelReset" href="">NO</a>
+        </div>
+        
+	</body>
+</html>

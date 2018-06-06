@@ -1,0 +1,246 @@
+/*CSS*/
+
+/* muli-300 - latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 300;
+  src: url('muli-v7-latin-300.eot'); /* IE9 Compat Modes */
+  src: local('Muli Light'), local('Muli-Light'),
+       url('muli-v7-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('muli-v7-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+       url('muli-v7-latin-300.woff') format('woff'), /* Modern Browsers */
+       url('muli-v7-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('muli-v7-latin-300.svg#Muli') format('svg'); /* Legacy iOS */
+}
+/* muli-regular - latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  src: url('muli-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Muli'),
+       url('muli-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('muli-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('muli-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('muli-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('muli-v7-latin-regular.svg#Muli') format('svg'); /* Legacy iOS */
+}
+
+
+* {
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: 'Muli', serif;
+}
+
+p, a {
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+}
+
+
+/* kiosk interface back button */
+
+.backbutton{
+    z-index:999999999999999;
+    width:165px;
+    height:115px;
+    position:fixed;
+    border-radius:5px;
+    background-color:#2D8097;
+    top:50px;
+    right:0px;
+
+    -webkit-box-shadow: 0px 9px 0px #467683, 0px 9px 10px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px #467683, 0px 9px 10px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px #467683, 0px 9px 10px rgba(0,0,0,.7);
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+
+.backbutton:active{
+    z-index:999999999999999;
+    -webkit-box-shadow: 0px 3px 0px #467683, 0px 3px 5px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px #467683, 0px 3px 5px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px #467683, 0px 3px 5px rgba(0,0,0,.9);
+    position: fixed;
+    top: 56px;
+    right:-5px;
+    background-color:#127A97;
+}
+
+.backbutton img{
+    z-index:999999999999999;
+    height:auto;
+    width:70px;
+    margin:0px;
+    margin-left:25px;
+      margin-top:25px;
+    padding:0px;
+
+}
+
+/* begin app code */
+#opening {
+    position: absolute;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    z-index: 9999;
+}
+
+#go {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 300px;
+    height: 45px;
+    background-color: white;
+}
+
+#go:hover {
+    background-color: grey;
+}
+
+#timeleft,#score {
+    position: absolute;
+    width: 80px;
+}
+
+#score {
+    position: absolute;
+    bottom: 0;
+}
+
+#rank {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: .8em;
+}
+
+#wanted {
+    margin-left:auto;
+    margin-right:auto;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border: dashed;
+}
+
+#congrats {
+    z-index: 99999;
+    color: white;
+    position: absolute;
+    left: 38%;
+    width: 470px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #04B4AE;
+    border: dashed white;
+}
+
+.reset>a {
+    text-decoration: none;
+    color: black;
+}
+
+.reset {
+    background-color: white;
+    padding: 20px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reset:hover {
+    background-color: aquamarine;
+}
+
+.popup {
+    text-align: center;
+}
+
+#seek {   
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#glass {
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 8;
+    width: 150px;
+    height: 150px;
+    opacity: .5;
+}
+
+#sky {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    overflow: hidden;
+}
+
+#fish1, .wrong {
+    margin: 5px;
+    display: inline-block;
+    background-color: red;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+#fish1 {
+    background-color: red;
+}
+
+#finished {
+    float: right;
+    width: 100px;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+#finished:hover {
+    background-color: aquamarine;
+}
+
+
+
+

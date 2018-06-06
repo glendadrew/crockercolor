@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="Ryan Fong - mixnmatch.css" rel="stylesheet" type="text/css">
+    <link href="Ryan Fong - jquery.nouislider.css" rel="stylesheet" type="text/css">
+
+    <title>Prototype 5</title>
+</head>
+
+<body>
+    <a href="../apphomepage.html">
+    <div class="backbutton"><img src="../return_white.png"></div></a>
+
+    <div id="swatches">
+        <div id="swatch"></div>
+
+        <div id="match"></div>
+    </div>
+
+    <p id="msg">Adjust the sliders below to match the colors:</p>
+
+    <script>
+      function myOtherFunction() {
+            var swatchColor;
+            var swatchR = Math.floor((Math.random() * 255) + 1);
+            var swatchG = Math.floor((Math.random() * 255) + 1);
+            var swatchB = Math.floor((Math.random() * 255) + 1);
+            swatchColor = 'rgb(' + swatchR + ',' + swatchG + ',' + swatchB + ')';
+            document.getElementById("swatch").style.background = swatchColor;
+            message = "Adjust the sliders below to match the colors: ";
+            document.getElementById("msg").innerHTML = message;
+            }
+</script>
+<section class="win">
+    <h1>You win!</h1>
+    <a class="b1" href="">Click here to play again!</a>
+</section>
+
+
+    <div id="colorpicker">
+        <div class="sliders" id="red"></div>
+
+        <div class="sliders" id="green"></div>
+
+        <div class="sliders" id="blue"></div>
+
+        <div class="result"></div>
+    </div>
+
+    <div class="b1" onclick="myOtherFunction()" style="margin-top: 100px">
+        New Color 
+</div>
+
+
+
+        <script src="jquery-min.js"></script> 
+
+        <script src="Ryan%20Fong%20-%20jquery.nouislider.all.js"></script>
+         <script src="jquery-ui.js"></script> 
+        <script src="Ryan%20Fong%20-%20mixnmatch.js"></script>
+    
+</body>
+</html>

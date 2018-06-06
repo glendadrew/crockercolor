@@ -1,0 +1,272 @@
+* { margin:0; padding:0; }
+body{
+
+}
+
+/* kiosk interface back button */
+
+.backbutton{
+    width:165px;
+    height:115px;
+    position:fixed;
+    border-radius:5px;
+    background-color:#98AC34;
+    top:50px;
+    right:-5px;
+
+    -webkit-box-shadow: 0px 9px 0px #8F9B55, 0px 9px 10px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px #8F9B55, 0px 9px 10px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px #8F9B55, 0px 9px 10px rgba(0,0,0,.7);
+
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+
+.backbutton:active{
+    -webkit-box-shadow: 0px 3px 0px #8F9B55, 0px 3px 5px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px #8F9B55, 0px 3px 5px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px #8F9B55, 0px 3px 5px rgba(0,0,0,.9);
+    position: fixed;
+    top: 56px;
+    right:-5px;
+    background-color:#8EAC00;
+}
+
+.backbutton img{
+    z-index:999999999999999;
+    height:auto;
+    width:70px;
+    margin:0px;
+    margin-left:25px;
+      margin-top:25px;
+    padding:0px;
+
+}
+
+/* begin app code */
+
+
+.container{
+  width:100%;
+  height:auto;
+  margin:auto;
+  font-family:Roboto Slab;
+    color:white;
+
+}
+
+/* painting */
+canvas{
+  position:relative;
+  width:auto;
+  max-height:65vh;
+  padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top:15px;
+  
+}
+
+/* controls panel */
+.tab{
+  padding:10px 25px 15px 25px;
+  float:Right;
+  position:absolute;
+  z-index:999;
+  bottom:250px;
+  right:70pt;
+  border:none;
+  border-radius: 5px 5px 0px 0px;
+  font-family:Roboto Slab;
+  font-size:15pt;
+  color:#D9CEB2;
+}
+.paint{
+  right:200px;
+    background-color:#948C75;
+}
+
+.gallery{
+  right:70px;
+  background-color:#7A6A53;
+  height:45px;
+  color:#E0D5B9;
+}
+.galleryimgs{
+  position:absolute;
+  width:85%;
+  height:100px;
+}
+.galleryimgs h2{
+  text-align:left;
+}
+button:focus {outline:0;}
+a{
+  padding:15px;
+  font-size:20pt;
+  font-weight:400;
+  color:#D9CEB2;
+}
+a:active{
+  color:#FFFFFF;
+}
+
+.controlpanel{
+  position:absolute;
+  width:100%;
+  bottom:0;
+  height:250px;
+  background-color:#948C75;
+  padding:0;
+}
+.controls{
+  z-index:20;
+  position:relative;
+  width:85%;
+  height:85%;
+  margin:auto;
+  vertical-align:center;
+
+}
+.current{
+  color:#E0D5B9;
+  display:inline;
+   font-size:14pt;
+  font-weight:400;
+}
+.current p{
+  display:inline;
+ 
+}
+#caption{
+display:inline;
+}
+
+.onethird{
+  float:left;
+  width:33.333%;
+  margin:auto;
+  margin-top:70px;
+  text-align:center;
+}
+
+
+.none{
+ -webkit-filter: none;   
+}
+
+
+#resetbtn{
+  position:relative;
+
+}
+
+.leftbtns{
+  width:100%;
+  display:inline;
+  position:absolute;
+  left:0;
+  bottom:0px;
+}
+.submit{
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+input[type="range"] {
+  -webkit-appearance: none!important;
+  width: 150px;
+  background-color: #FFFFEE;
+  height: 5px;
+  vertical-align: 1px;
+  width:225px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none!important;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  cursor: pointer;
+  
+
+}
+input:focus {
+    box-shadow: none;
+    outline: none;
+  }
+
+
+
+label{ 
+font-weight:400;
+ font-size:25pt;
+ padding:0px 15px 0px 15px;
+}
+
+.downloadedimages{
+ position:relative;
+  margin:auto;
+  vertical-align:center;
+  text-align:center;
+
+}
+
+.savedimg{
+  padding:1.5%;
+  max-height:150px;
+}
+
+
+/* part two w/ questions */
+
+.buttoncontainer{
+    text-align:center;
+    position:relative;
+
+}
+ul{
+  list-style:none;
+  display:inline;
+}
+li{
+  display:inline-block;
+}
+h2{
+ font-weight:400;
+ font-size:25pt;
+}
+.buttoncontainer{
+    position:relative;
+    top:60px;
+}
+.parttwoquestion{
+  padding-bottom:20px;
+}
+
+/* third part with other [mood] images */
+.words{
+  padding-top:15px;
+}
+.words h2{
+  display:inline;
+}
+.words p{
+  display:inline-block;
+    color:#E0D5B9;
+  display:inline;
+   font-size:14pt;
+  font-weight:400;
+}
+.topcontainer a{
+  float:right;
+}
+.moods{
+  width:100%;
+}

@@ -1,0 +1,195 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+      <meta charset="utf-8">
+
+      <title>Image Editor | Vikas Lalwani</title>
+      <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+      <link href="cool.css" rel="stylesheet" type="text/css">
+      <script src="jquery-min.js" type="text/javascript"></script>
+      <script src="caman.full.min.js" type="text/javascript"></script>  
+      <script src="directorySlider.js" type="text/javascript"></script>
+      <script src="canvastest.js" type="text/javascript"></script>
+
+
+  </head>
+
+  <body>
+
+<a href="../apphomepage.html">
+    <div class="backbutton">
+        <img src="../return_white.png"></img>
+    </div>
+</a>
+
+  
+      <div class="container">
+          <canvas id="canvas">No Canvas Available</canvas>
+          <button class="tab paint">Paint</button>
+          <button class="tab gallery">Gallery</button>
+
+          <div class="controlpanel">
+              
+
+            <div class="controls">
+                <span class="partone">
+                
+                  <span class="onethird">
+                      <label for="saturation">Saturation</label>
+                      <input id="saturation" max="200" min="-100" name="Saturation" type="range" value="-100">
+                  </span> 
+                  <span class="onethird">
+                      <label for="hue">Hue</label>
+                      <input id="hue" max="300" min="0" name="hue"type="range" value="0">
+                  </span> 
+                  <span class="onethird">
+                      <label for="brightness">Brightness</label>
+                      <input id="brightness" max="50" min="-40" name="brightness"type="range" value="-40"><br>
+                  </span>
+
+                  <div class="leftbtns">
+                  <ul>
+                      <li><a id="resetbtn">Reset</a></li>
+                      <li><a class="returnhome">New Painting</a></li>
+
+                      <li>
+                        <div class="current">
+                            <p>Currently editing 
+                              <div id="caption"></div>
+                            </p>
+                        </div>
+                      </li>
+                  </ul>
+
+                   <div class="submit">
+                      <a id="download">Submit</a>
+                  </div>
+                  </div>
+             
+                 
+                </span>
+            
+                <section class="questions">
+                      <div class="buttoncontainer">
+                          <h2 class="parttwoquestion not">What mood does the paintings colors
+                          suggest?</h2>
+                          <ul>
+                          <li><a id="button">Happy</a></li>
+                          <li><a id="buttonsad">Sad</a></li>
+                          <li><a id="buttonenergetic">Energetic</a></li>
+                          <li><a id="buttonscary">Spooky</a></li>
+                          </ul>
+                      </div>
+                </section>
+
+                <div class="moods">
+                      <section class="happy">
+                          <div class="topcontainer">
+                              <div class="words">
+                                  <h2>Other Happy paintings</h2>
+                                  <p class="otherp">Notice how these paintings have similar colors
+                                  </p>
+                              </div>
+                              
+                            
+                               <div class="happyimgs downloadedimages">
+                                  <img class="savedimg" src="savedimgs/happy (1).png">
+                                  <img class="savedimg" src="savedimgs/happy (2).png"> 
+                                  <img class="savedimg" src="savedimgs/happy (3).png"> 
+                                  <img class="savedimg" src="savedimgs/happy (4).png"> 
+                                  <img class="savedimg" src="savedimgs/happy (5).png">
+                                </div>
+
+                    
+                              <a class="returnhome">Play with a New Painting</a>
+                          </div>
+                      </section>
+
+                      <section class="sad">
+                          <div class="topcontainer">
+                              <div class="words">
+                                  <h2>Other Sad paintings</h2>
+
+                                  <p class="otherp">Notice how these paintings have similar colors
+                                  </p>
+                              </div>
+
+                             <div class="sadimgs downloadedimages">
+                                  <img class="savedimg" src="savedimgs/sad (1).png">
+                                  <img class="savedimg" src="savedimgs/sad (2).png"> 
+                                  <img class="savedimg" src="savedimgs/sad (3).png"> 
+                                  <img class="savedimg" src="savedimgs/sad (4).png"> 
+                                  <img class="savedimg" src="savedimgs/sad (5).png">
+                                </div>
+
+                    
+                              <a class="returnhome">Play with a New Painting</a>
+                          </div>
+                      </section>
+
+                      <section class="energetic not">
+                          <div class="topcontainer">
+                              <div class="words">
+                                  <h2>Other Energetic paintings</h2>
+
+                                  <p class="otherp">Notice how these paintings have similar colors
+                                  </p>
+                              </div>
+
+                              <div class="energeticimgs downloadedimages">
+                                  <img class="savedimg" src="savedimgs/energetic (1).png">
+                                  <img class="savedimg" src="savedimgs/energetic (2).png"> 
+                                  <img class="savedimg" src="savedimgs/energetic (3).png"> 
+                                  <img class="savedimg" src="savedimgs/energetic (4).png"> 
+                                  <img class="savedimg" src="savedimgs/energetic (5).png">
+                                </div>
+
+                    
+                              <a class="returnhome">Play with a New Painting</a>
+                          </div>
+                      </section>
+
+                      <section class="scary not">
+                          <div class="topcontainer">
+                              <div class="words">
+                                  <h2>Other Spooky paintings</h2>
+
+                                  <p class="otherp">Notice how these paintings have similar colors
+                                  </p>
+                              </div>
+
+                              <div class="scaryimgs downloadedimages">
+                                  <img class="not savedimg" src="savedimgs/scary (1).png">
+                                  <img class="not savedimg" src="savedimgs/scary (2).png"> 
+                                  <img class="not savedimg" src="savedimgs/scary (3).png"> 
+                                  <img class="not savedimg" src="savedimgs/scary (4).png"> 
+                                  <img class="not savedimg" src="savedimgs/scary (5).png">
+                                </div>
+
+                    
+                              <a class="returnhome">Play with a New Painting</a>
+                          </div>
+                      </section>
+                  </div>
+              </div>
+
+              <div class="galleryimgs downloadedimages not">
+              <h2>Recent paintings</h2>
+                <img class="savedimg" src="savedimgs/artark (1).png">
+                <img class="savedimg" src="savedimgs/artark (2).png"> 
+                <img class="savedimg" src="savedimgs/artark (3).png"> 
+                <img class="savedimg" src="savedimgs/artark (4).png"> 
+                <img class="savedimg" src="savedimgs/artark (5).png">
+                <img class="savedimg" src="savedimgs/happy (1).png">
+                <img class="savedimg" src="savedimgs/sad (2).png"> 
+                <img class="savedimg" src="savedimgs/scary (3).png">
+                <img class="savedimg" src="savedimgs/energetic (4).png">
+                <img class="savedimg" src="savedimgs/happy (5).png">  
+        
+            
+              </div>
+          </div>    
+      </div>
+  </body>
+  </html>

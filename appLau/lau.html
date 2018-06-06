@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title> finaltest2</title>
+        <script src="jquery-min.js"></script>
+        <script src="jquery-ui.min.js"></script>
+    
+        <!--PLUG IN FOR TOUCH SCREENS-->
+        <script src="jquery.ui.touch-punch.min.js"></script>
+        <script src="lau.js" type="text/javascript"></script>
+    
+        <!-- style sheet-->
+        <link rel="stylesheet" href="lau.css">
+</head>
+<body>
+
+<a href="../apphomepage.html">
+    <div class="backbutton">
+        <img src="../return_white.png"></img>
+    </div>
+</a>
+
+    <section id="opening">
+        <h1> greetings young color seeker. </h1>
+        <p> Use the bottom color boxes to find the colors we need. </p>
+        <p> Simply drag the bottom box over the colors in front of you. </p>
+        <p> Discover color combinations and reveal the correct color!  </p>
+        <p id="go"> Begin! </p>
+    </section>
+    
+    <div id="wanted">
+        <h1> this is the color we seek.</h1>
+        <div id="seek" data-index="-1"></div>
+        <p id="wanted1"> ORANGE</p>
+    </div>
+    
+    <div id="congrats"> 
+        <h1>you found it!</h1>
+        <p id="congrats2"> yellow and red make the color orange, which is a secondary color.</p>
+        <p class="reset"><a href="#"> play next round? </a></p>
+    </div>
+        
+    <div id="sky">
+        <div id="fish1"></div>
+        <div class="wrong"></div>
+        <div class="wrong"></div>
+        <div class="wrong"></div>
+        <div class="wrong"></div>
+    </div>
+    
+    <div id="glass"></div>
+    <div class="popup"><p> Drag me over the colors to find the one you need! </p></div>
+
+    <section id='score'>
+        <h1>score</h1>
+        <p id="scoreValue">0</p>
+    </section>
+    
+    <section id='rank'>
+        <h1>rank</h1>
+        <p id="rankValue"> Rookie color mixer</p>
+    </section>
+    
+    <div id="finished"> 
+        <p>Reset game?</p>
+    </div>
+
+</body>
+    
+</html>

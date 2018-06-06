@@ -1,0 +1,170 @@
+/*CSS*/
+
+* {
+    overflow: hidden;
+}
+
+h1 {
+    font-weight: 400;
+    font-family: 'Muli', serif;
+}
+
+p, a {
+    font-weight: 300;
+    font-family: 'Muli', sans-serif;
+}
+
+#opening {
+    position: absolute;
+    padding-top: 150px;
+    width: 100%;
+    height: 100%;
+    background-color: aquamarine;
+    text-align: center;
+    z-index: 9999;
+}
+
+#go {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 25px;
+    width: 300px;
+    height: 45px;
+    background-color: white;
+}
+
+#go:hover {
+    background-color: grey;
+}
+
+#timeleft,#score {
+    position: absolute;
+    width: 80px;
+}
+
+#score {
+    position: absolute;
+    bottom: 0;
+}
+
+#rank {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: .8em;
+}
+
+#wanted {
+    margin-left:auto;
+    margin-right:auto;
+    z-index: 9999;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 15px;
+    border: dashed;
+}
+
+#congrats {
+    z-index: 99999;
+    color: white;
+    position: absolute;
+    left: 38%;
+    width: 470px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #04B4AE;
+    border: dashed white;
+}
+
+.reset>a {
+    text-decoration: none;
+    color: black;
+}
+
+.reset {
+    background-color: white;
+    padding: 20px;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reset:hover {
+    background-color: aquamarine;
+}
+
+.popup {
+    text-align: center;
+}
+
+#seek {   
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: 100px;
+}
+
+#glass {
+    background-color: yellow;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 8;
+    width: 150px;
+    height: 150px;
+    opacity: .5;
+}
+
+#sky {
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
+    overflow: hidden;
+}
+
+#fish1, .wrong {
+    margin: 5px;
+    display: inline-block;
+    background-color: red;
+    z-index: 1;
+    width: 150px;
+    height: 150px;
+    background-repeat: no-repeat;
+}
+
+#fish1 {
+    background-color: red;
+}
+
+#finished {
+    float: right;
+    width: 100px;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+#finished:hover {
+    background-color: aquamarine;
+}
+
+
+
+
